@@ -13,13 +13,26 @@ body {
 
 }
 
+.hero {
+    height: 600px; /* Full höjd på skärmen */
+    background-image: url('https://www.europol.europa.eu/sites/default/files/images/what-we-offer.jpg'); /* Lägg till din bakgrundsbild */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-align: center;
+    position: relative;
+    border: solid #333;
+}
 h1 {
     text-align: center;
     padding-top: 50px;
     font-size: 42px;
     text-decoration: underline;
     margin-bottom: 30px;
-    color: white;
+    color: #333;
 }
 
 .section {
@@ -74,6 +87,102 @@ p {
 }
 
 
+.customer-benefits {
+    display: flex;
+    border: solid #333;
+    margin: 40px 0; /* Ge avstånd runt sektionen */
+}
 
 
+.customer-image {
+    display: flex;
+    width: 100px; /* Anpassa storleken på bilden */
+    height: 100px; /* Hålla bildförhållandet */
+    margin-right: 20px; /* Ge avstånd mellan bild och text */
+}
+
+.text-content {
+    max-width: 600px; /* Begränsa textens bredd */
+    
+    
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid #333;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.faq-container {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.faq-item summary {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+    outline: none;
+    font-weight: bold;
+}
+
+.faq-item p {
+    font-size: 16px;
+    padding: 10px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.partners-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Bakgrundsfärg för sektionen */
+    border: solid #333;
+}
+
+.partners-title {
+    position: absolute; /* Gör att titeln kan placeras över bilderna */
+    top: 20px; /* Avstånd från toppen av sektionen */
+    left: 20px; /* Avstånd från vänster kant */
+    font-size: 32px; /* Storlek på titeln */
+    color: #333; /* Textfärg */
+    z-index: 1; /* Se till att titeln visas över bilderna */
+}
+
+
+.partners-container {
+    display: flex;
+    flex-wrap: wrap; /* Gör så att bilderna går till nästa rad om det behövs */
+    justify-content: center; /* Centrera bilderna horisontellt */
+    gap: 20px; /* Avstånd mellan bilderna */
+}
+
+.partner {
+    flex: 1 1 150px; /* Flexbox för att skapa en responsiv layout */
+    max-width: 150px; /* Maximal bredd för logotypen */
+}
+
+.partner img {
+    width: 100%; /* Gör bilden responsiv */
+    height: auto; /* Bevara proportionerna */
+    border-radius: 5px; /* Rundade hörn på bilderna */
+}
 
