@@ -1,3 +1,63 @@
-.header {
-    
+/* Container for the boxes */
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px; /* Space between the boxes */
+    padding: 20px; /* Padding around the grid */
+}
+
+/* Each profile box */
+.profile {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #ccc; /* Border around each profile */
+    border-radius: 10px; /* Optional: Rounded corners */
+    background-color: #f9f9f9; /* Background color for each box */
+}
+
+/* Make the image circular */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make image circular */
+    object-fit: cover; /* Ensure the image fits properly */
+}
+
+/* Profile text */
+.profile div {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text vertically */
+    margin-left: 20px; /* Space between image and text */
+}
+
+/* Odd profiles layout */
+.profile:nth-child(odd) {
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+/* Even profiles layout */
+.profile:nth-child(even) {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+}
+
+/* Adjust margin for text and image */
+.profile:nth-child(odd) img {
+    margin-right: 800px; /* Space between image and text for odd profiles */
+    margin-left: 40px;
+}
+
+.profile:nth-child(even) img {
+    margin-left: 900px; /* Space between image and text for even profiles */
+    margin-right: 40px;
+}
+
+/* Increase spacing between text and images */
+.profile div h1, .profile div p {
+    margin: 10px 0; /* Add vertical space between heading and paragraph */
+}
+
+/* Add space between profile sections */
+.profile {
+    margin-bottom: 20px; /* Space between each profile box */
 }
