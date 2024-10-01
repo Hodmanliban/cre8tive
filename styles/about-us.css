@@ -1,10 +1,57 @@
+.header {
+    position: relative; /* Allows child elements to be positioned relative to this */
+    background-color: #fff;
+    padding: 20px; /* Space around the header */
+}
+
+.logo-container {
+    position: fixed; /* Logo moves with the scroll */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px; /* Set desired width for the logo */
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+h1 {
+    margin-left: 120px;
+}
+
+
+/* Container for navigation */
+nav {
+    margin: 0 100px;
+}
+
+/* Navigation link styles */
+.nav-link {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Inherit color or set specific color */
+    margin: 0 50px; /* Space between the links */
+    display: inline-block; /* Ensures the zoom effect works on the entire link */
+    transition: transform 0.3s ease; /* Smooth transition for zoom */
+    font-size: 10px;
+    
+}
+
+/* Zoom effect on hover */
+.nav-link:hover {
+    transform: scale(1.2); /* Adjust the scale factor for zoom */
+}
+
+
+
 /* Container for the boxes */
 .boxes {
     display: grid;
     grid-template-columns: 1fr; /* Single column layout */
     gap: 20px; /* Space between the boxes */
-    padding: 20px; /* Padding around the grid */
-    
+    padding: 20px; /* Padding around the grid */   
     
 }
 
@@ -12,12 +59,12 @@
 /* Each profile box */
 .profile {
     display: flex;
-    padding: 20px;
+    height: 300px;
     border: 1px solid #ccc; /* Border around each profile */
     border-radius: 10px; /* Optional: Rounded corners */
-    background-color: #f9f9f9; /* Background color for each box */
     margin-bottom: 20px; /* Space between each profile box */
     transition: transform 0.3s;
+    align-items: center;
     
 }
 .profile:hover {
@@ -51,6 +98,7 @@
 /* Even profiles layout */
 .profile:nth-child(even) {
     flex-direction: row-reverse; /* Image on the right, text on the left */
+    background-color: #e8e8e8;
 }
 
 /* Increase spacing between text and images */
@@ -62,6 +110,7 @@
 .profile:nth-child(odd) img {
     margin-right: 700px; /* Space between image and text for odd profiles */
     margin-left: 10px;
+   
 }
 
 .profile:nth-child(even) img {
