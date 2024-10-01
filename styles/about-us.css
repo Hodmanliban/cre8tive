@@ -36,13 +36,16 @@ nav {
 
 
 /* Container for the boxes */
-.boxes {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 20px; /* Space between the boxes */
-    padding: 20px; /* Padding around the grid */   
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto; /* Rows adjust based on content */
+        gap: 20px; /* Space between the boxes */
+        padding: 20px; /* Padding around the grid */
+    }
     
-}
+
 
 
 /* Each profile box */
@@ -54,6 +57,7 @@ nav {
     margin-bottom: 20px; /* Space between each profile box */
     transition: transform 0.3s;
     align-items: center;
+    
     
 }
 .profile:hover {
