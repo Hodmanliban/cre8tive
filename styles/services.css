@@ -6,33 +6,42 @@
 
 body {
     width: 100%;
-    background-image: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+
 }
 
 .hero {
+    width: 100%;
     height: 600px; /* Full höjd på skärmen */
-    background-image: url('https://www.europol.europa.eu/sites/default/files/images/what-we-offer.jpg'); /* Lägg till din bakgrundsbild */
+    background-color: #dedbdb;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: white;
     text-align: center;
     position: relative;
-    border: solid #333;
+    border-radius: 10px;
+
 }
 h1 {
     text-align: center;
     padding-top: 50px;
     font-size: 42px;
-    text-decoration: underline;
     margin-bottom: 30px;
-    color: #333;
+    color: white;
+}
+
+.hero-button {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .section {
@@ -56,7 +65,7 @@ h1 {
 
 .icon {
     font-size: 50px;
-    color: #333;
+    color: #07829e;
     margin-bottom: 20px;
 }
 
@@ -66,7 +75,6 @@ h2 {
 }
 
 .box {
-    border: 2px solid #333; /* Creates the box */
     padding: 10px;
     margin-bottom: 20px;
     background-color: #f4f4f4;
@@ -88,33 +96,30 @@ p {
 
 
 .customer-benefits {
-    display: flex;
-    border: solid #333;
-    margin: 40px 0; /* Ge avstånd runt sektionen */
+    display: flex; /* Flexbox aktiverad */
+    align-items: center; /* Centra innehållet vertikalt */
+    justify-content: center; /* Centrera horisontellt om nödvändigt */
+    margin-top: 50px; /* Lägger till lite utrymme ovanför sektionen */
 }
+
 
 
 .customer-image {
     display: flex;
-    width: 100px; /* Anpassa storleken på bilden */
+    width: 500px; /* Anpassa storleken på bilden */
     height: 100px; /* Hålla bildförhållandet */
-    margin-right: 20px; /* Ge avstånd mellan bild och text */
 }
 
 .text-content {
-    max-width: 600px; /* Begränsa textens bredd */
-    
-    
+    background-color:  rgb(240, 237, 237);
+    width: 100px;  
 }
 
 .faq-section {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid #333;
 }
 
 .faq-section h2 {
@@ -125,6 +130,7 @@ p {
 }
 
 .faq-container {
+    display: grid;
     margin-top: 20px;
 }
 
@@ -153,9 +159,13 @@ p {
 }
 
 .partners-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Bakgrundsfärg för sektionen */
-    border: solid #333;
+    padding: 15px;
+    background-color: rgb(240, 237, 237); /* Bakgrundsfärg för sektionen */
+    border-radius: 40px;
+}
+
+.partners {
+    color: #333;
 }
 
 .partners-title {
@@ -182,7 +192,7 @@ p {
 
 .partner img {
     width: 100%; /* Gör bilden responsiv */
-    height: auto; /* Bevara proportionerna */
-    border-radius: 5px; /* Rundade hörn på bilderna */
+    height: 100px; /* Bevara proportionerna */
+    border-radius: 900px; /* Rundade hörn på bilderna */
 }
 
