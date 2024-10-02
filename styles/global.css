@@ -1,3 +1,16 @@
-html {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
+.logo-container {
+        position: fixed; /* Logo moves with the scroll */
+        top: 20px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+        z-index: 1000;
+    }
+    
+ .logo {
+
+        background: url("../images/Cre8tive 2.png");
+        width: 100px; /* Set desired width for the logo */
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }

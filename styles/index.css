@@ -6,10 +6,12 @@
     font-family: sans-serif;
 }       
 
+
+
 #hero{
     width: 100%;    
     height: 850px;
-    background: url("../images index/Designer-2.jpeg"), linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37, 29, 29, 0.44));
+    background: url("../images index/Designer-2.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,6 +29,7 @@
     justify-content: space-between;
     margin-bottom: 100px;
     padding-top: 30px;
+    margin-left: 650px;
 }
 
 .navbar .menu a:not(:last-child){
@@ -91,5 +94,101 @@
    
 }
 
+#intro-section {
+   
+}
 
+.box-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    height: 550px;
+    margin-top: 50px;
 
+}
+
+.intro {
+    margin-left: 160px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h2{
+    margin-left: 160px;
+    margin-top: 80px;
+    font-size: 40px;
+    display: block;
+    line-height: 65px;
+}
+
+img{
+    width: 500px;
+    height: 450px;
+}
+
+#section-2{
+    background-color: #e8e8e8;
+}
+.box-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 550px;
+    margin-top: 50px;
+    background-color: #e8e8e8;
+    margin-left: 160px;
+
+}
+
+.intro-2{
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 160px;
+}
+
+.second-headline{
+    margin-bottom: 50px;
+    margin-left: 800px;
+    padding-top: 80px;
+}
+
+form{
+    margin-left: 500px;
+    margin-right: 500px;
+    gap: 100px;
+    padding-top: 100px;
+    height: 830px;
+}
+
+input{
+    background: #e8e8e8;
+    height: 60px;
+    width: 500px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    font-size: 18px;
+}
+
+.subscribe{
+    font-size: 18px;
+    color:#2e2c2c;
+}
+
+.btn-subscribe{
+    background:#2e2c2c;
+    color: #e8e8e8;
+    border: #2e2c2c;
+    height: 60px;
+    width: 500px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn-subscribe:hover{
+    color:#2e2c2c;
+    background:#e8e8e8;
+    border: 1px solid #2e2c2c;
+}
