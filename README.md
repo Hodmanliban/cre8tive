@@ -1,7 +1,7 @@
 Verksamhetsbeskrivning: 
 Cre8tive är en innovativ webbyrå som specialiserar sig på att skapa skräddarsydda digitala lösningar för företag som vill växa online. Vi erbjuder tjänster inom webbutveckling, e-handel, digital marknadsföring och SEO, med fokus på att leverera användarvänliga och resultatdrivna hemsidor. Med en passion för design och teknik hjälper vi våra kunder att stärka sin digitala närvaro och nå nya affärsmål genom kreativa och effektiva strategier.
 
-Amanda har har utvecklat landningssidan för vår webbyrå Cre8tive, där hon har kombinerat stilren design med användarvänlighet för att skapa ett inbjudande första intryck. Sidan speglar vårt varumärke och våra tjänster, och guidar besökarna effektivt till de lösningar vi erbjuder, sedan har hon även jobbat med vår header för hemsidan. 
+Amanda har har utvecklat landningssidan för vår webbyrå Cre8tive, där hon har kombinerat stilren design med användarvänlighet för att skapa ett inbjudande första intryck. Sidan speglar vårt varumärke och våra tjänster, och guidar besökarna effektivt till de lösningar vi erbjuder.
 
 Fuad har utvecklat "Kontakta oss"-sidan för vår webbyrå Cre8tive. Sidan är utformad för att vara enkel och funktionell, med tydliga kontaktalternativ och ett användarvänligt formulär som gör det lätt för besökare att snabbt nå oss för frågor eller samarbeten.
 
