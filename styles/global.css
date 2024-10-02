@@ -7,8 +7,47 @@
     }
     
  .logo {
+
+        background: url("../images/Cre8tive 2.png");
         width: 100px; /* Set desired width for the logo */
         height: 100px;
         border-radius: 50%;
         border: 1px solid black;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        padding-top: 30px;
+        margin-left: 650px;
+    }
+    
+    .navbar .menu a:not(:last-child){
+        color: #ffffff;
+        margin-left: 20px;
+        font-size: 20px;
+        transition-duration: 0.4s;
+        letter-spacing: 0.5px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+      
+    .navbar .menu a:not(:last-child):hover{
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 10px;
+    }
+      
+    .navbar .menu .btn-contact{
+        color: #ffffff;
+        margin-left: 20px;
+        padding: 10px 25px;
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+    
+    .navbar .menu .btn-contact:hover{
+        background: #ffffff;
+        color: #2e2c2c;
     }
