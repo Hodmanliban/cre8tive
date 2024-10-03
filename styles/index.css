@@ -114,7 +114,6 @@ h2{
     margin-left: 160px;
     margin-top: 80px;
     font-size: 40px;
-    display: block;
     line-height: 65px;
 }
 
@@ -128,24 +127,23 @@ img{
     background-color: #e8e8e8;
 }
 .box-2{
+    background-color: #e8e8e8;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
     height: 550px;
     margin-top: 50px;
-    background-color: #e8e8e8;
-    margin-left: 160px;
 
 }
 
 .intro-2{
     font-size: 18px;
     line-height: 30px;
-    margin-right: 160px;
+    margin-left: 160px;
 }
 
 .second-headline{
     margin-bottom: 50px;
-    margin-left: 800px;
     padding-top: 80px;
 }
 
@@ -189,4 +187,216 @@ input{
     color:#2e2c2c;
     background:#e8e8e8;
     border: 1px solid #2e2c2c;
+}
+
+
+@media (max-width: 1200px) {
+    .navbar {
+        margin-left: 0;
+        padding-left: 50px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .hero-box .hero-heading {
+        font-size: 45px;
+        line-height: 60px;
+        margin-left: 30px;
+    }
+
+    .btn-box{
+        margin-left: 30px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 30px;
+    }
+
+    .box-1{
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        column-gap: 20px;
+        height: auto;
+    }
+
+    .box-2 {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        column-gap: 20px;
+        padding-right: 10px;
+        height: auto;
+
+    }
+
+   
+    .box-1 img, .box-2 img {
+        width: 300px;
+        height: 300px;
+        align-items: center;
+    }
+
+    h2{
+        margin-left: 30px;
+        font-size: 35px;
+    }
+
+    .second-headline{
+       margin-left: 30px;
+       font-size: 35px;
+    }
+
+    .intro, .intro-2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        line-height: 20px;
+    }
+
+    .intro-2{
+        margin-bottom: 50px;
+    }
+
+    form {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    input, .btn-subscribe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #hero{
+        height: 650px;
+    }
+
+    .navbar .menu a:not(:last-child){
+        font-size: 15px;
+    }
+
+    .navbar .menu .btn-contact{
+        font-size: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-box .hero-heading {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .box-1, .box-2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: auto;
+    }
+
+    .box-2{
+        padding-bottom: 60px;
+    }
+
+    .box-1 img, .box-2 img {
+        width: 300px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .intro, .intro-2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h2, .second-headline {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input, .btn-subscribe {
+        width: 100%;
+    }
+
+    br{
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    #hero{
+        height: 600px;
+    }
+    .hero-box .hero-heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .navbar .menu a:not(:last-child){
+        font-size: 10px;
+    }
+
+    .navbar .menu .btn-contact{
+        font-size: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .box-1, .box-2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0 5px; 
+        height: auto;
+    }
+
+
+    .intro, .intro-2 {
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 20px; 
+        max-width: 90%; 
+        margin-bottom: 20px;
+    }
+
+
+    h2, .second-headline {
+        font-size: 20px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    form {
+        padding-top: 50px;
+    }
+
+    
 }
