@@ -1,6 +1,7 @@
 
 html {
     background-color: #ffffff;
+    width: 100%;
 }
 
 * {
@@ -31,10 +32,10 @@ html {
   
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 100px;
     padding-top: 30px;
-    margin-left: 650px;
+   
 }
 
 .navbar .menu a:not(:last-child){
@@ -143,17 +144,21 @@ nav {
 
 
 /* Each profile box */
+
 .profile {
     display: flex;
-    height: 300px;
-    border: 1px solid #ccc; /* Border around each profile */
-    border-radius: 10px; /* Optional: Rounded corners */
-    margin-bottom: 20px; /* Space between each profile box */
-    transition: transform 0.3s;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Behåll transition här */
     align-items: center;
-    
-    
+    justify-content: space-between;
+    margin: 0 100px; 
 }
+
+    
+    
+
 .profile:hover {
     transform: scale(1.2);
 }
@@ -174,39 +179,87 @@ nav {
     display: flex;
     flex-direction: column; /* Stack text vertically */
     justify-content: center; /* Center text vertically */
-    margin-left: 20px; /* Space between image and text */
+}
+
+/* Each profile box */
+.profile {
+    display: flex;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Behåll transition här */
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px; /* Justera marginaler här */
 }
 
 /* Odd profiles layout */
 .profile:nth-child(odd) {
-    flex-direction: row; /* Image on the left, text on the right */
+    flex-direction: row; /* Bild till vänster, text till höger */
 }
 
 /* Even profiles layout */
 .profile:nth-child(even) {
-    flex-direction: row-reverse; /* Image on the right, text on the left */
-    background-color: #e8e8e8;
+    flex-direction: row-reverse; /* Bild till höger, text till vänster */
+    background-color: #e8e8e8; /* Bakgrundsfärg för att särskilja */
 }
 
-/* Increase spacing between text and images */
-.profile div h1, .profile div p {
-    margin: 10px 0; /* Add vertical space between heading and paragraph */
+.profile:hover {
+    transform: scale(1.2);
 }
 
-/* Adjust margins specifically for odd and even profiles */
-.profile:nth-child(odd) img {
-    margin-right: 700px; /* Space between image and text for odd profiles */
-    margin-left: 10px;
+/* Media queries for responsive layout */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .profile {
+        align-items: center; /* Centrera innehållet */
+        margin: 0 30px;
+    }
+
+    .profile.column {
+        flex-direction: column;
+
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+    .profile:active {
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .profile {
+        margin: 0 100px;
+    }
+
    
 }
 
-.profile:nth-child(even) img {
-    margin-left: 800px; /* Space between image and text for even profiles */
-    margin-right: 10px;
+@media only screen and (min-width: 1601px) {
+    body {
+        font-size: 20px; /* Justera storleken som behövs */
+    }
+
+    .profile {
+        margin: 0 140px;
+    }
+
+   
 }
 
-/* Optional: Maintain margin for the profile container */
-.profile {
-    margin-left: 100px; /* Optional margin-left for the profile box */
-    margin-right: 100px; /* Optional margin-right for the profile box */
-}
+
+
+
+  
+    
+
+
+
+    
