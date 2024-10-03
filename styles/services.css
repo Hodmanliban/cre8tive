@@ -6,43 +6,50 @@
 
 body {
     width: 100%;
-    background-image: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .hero {
+    width: 100%;
     height: 600px; /* Full höjd på skärmen */
-    background-image: url('https://www.europol.europa.eu/sites/default/files/images/what-we-offer.jpg'); /* Lägg till din bakgrundsbild */
+    background-image: url(https://i.pinimg.com/originals/a3/59/b0/a359b0a8bb692bfb66e7a8f7ec4b7767.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: white;
     text-align: center;
     position: relative;
-    border: solid #333;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
+
 h1 {
     text-align: center;
     padding-top: 50px;
     font-size: 42px;
-    text-decoration: underline;
     margin-bottom: 30px;
-    color: #333;
+    color: white;
+    font-family: sans-serif;
 }
 
-.section {
-    padding: 20px;
+.hero-button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: sans-serif;
 }
 
 .services {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .card {
@@ -56,26 +63,30 @@ h1 {
 
 .icon {
     font-size: 50px;
-    color: #333;
+    color: grey;
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
-    border: 2px solid #333; /* Creates the box */
     padding: 10px;
     margin-bottom: 20px;
     background-color: #f4f4f4;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-family: sans-serif;
 }
 
 p {
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 .button {
@@ -83,38 +94,14 @@ p {
     color: white;
     background-color: #333;
     padding: 10px 20px;
-    border-radius: 5px;
-}
-
-
-.customer-benefits {
-    display: flex;
-    border: solid #333;
-    margin: 40px 0; /* Ge avstånd runt sektionen */
-}
-
-
-.customer-image {
-    display: flex;
-    width: 100px; /* Anpassa storleken på bilden */
-    height: 100px; /* Hålla bildförhållandet */
-    margin-right: 20px; /* Ge avstånd mellan bild och text */
-}
-
-.text-content {
-    max-width: 600px; /* Begränsa textens bredd */
-    
-    
+    border-radius: 20px;
 }
 
 .faq-section {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid #333;
 }
 
 .faq-section h2 {
@@ -122,9 +109,11 @@ p {
     margin-bottom: 20px;
     font-size: 28px;
     color: #333;
+    font-family: sans-serif;
 }
 
 .faq-container {
+    display: grid;
     margin-top: 20px;
 }
 
@@ -143,6 +132,7 @@ p {
     color: #333;
     outline: none;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .faq-item p {
@@ -150,12 +140,17 @@ p {
     padding: 10px;
     color: #555;
     margin-top: 10px;
+    font-family: sans-serif;
 }
 
 .partners-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Bakgrundsfärg för sektionen */
-    border: solid #333;
+    padding: 15px;
+    background-color: rgb(240, 237, 237); /* Bakgrundsfärg för sektionen */
+    border-radius: 40px;
+}
+
+.partners {
+    color: #333;
 }
 
 .partners-title {
@@ -165,6 +160,8 @@ p {
     font-size: 32px; /* Storlek på titeln */
     color: #333; /* Textfärg */
     z-index: 1; /* Se till att titeln visas över bilderna */
+    justify-content: center;
+    font-family: sans-serif;
 }
 
 
@@ -182,7 +179,7 @@ p {
 
 .partner img {
     width: 100%; /* Gör bilden responsiv */
-    height: auto; /* Bevara proportionerna */
-    border-radius: 5px; /* Rundade hörn på bilderna */
+    height: 100px; /* Bevara proportionerna */
+    border-radius: 900px; /* Rundade hörn på bilderna */
 }
 
