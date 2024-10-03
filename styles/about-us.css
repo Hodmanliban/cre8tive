@@ -142,28 +142,6 @@ nav {
     
 
 
-
-/* Each profile box */
-
-.profile {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease; /* Behåll transition här */
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 100px; 
-}
-
-    
-    
-
-.profile:hover {
-    transform: scale(1.2);
-}
-
-
 /* Make the image circular */
 .profile img {
     width: 150px;
@@ -205,15 +183,91 @@ nav {
     background-color: #e8e8e8; /* Bakgrundsfärg för att särskilja */
 }
 
-.profile:hover {
-    transform: scale(1.2);
+
+.footer {
+    background-color: lightgrey;
+    position: relative;
+    height: 100px;
+    text-align: center;
+    margin-top: 100px;
+    clear: both;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space between social media and links */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Optional: add some horizontal padding */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #000; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust the size as needed */
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #000; /* Adjust the color as needed */
+}
+
+
+
+
 /* Media queries for responsive layout */
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 10px;
+    }
+    .profile {
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    .profile.column {
+        flex-direction: column;
+    }
+    .profile:active {
+        transform: scale(1.1);
+    }
+
+}
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 12;
+    }
+   
+    .navbar .menu a:not(:last-child) {
+        font-size: 15px;
+        color: rgb(255, 255, 255) ;
+    }
+
+    .navbar .menu a:not(:last-child):active{
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 4px;
+    }
+    .logo-container {
+        top: 10px; /* Justera logotypens position för mindre skärmar */
+        left: 10px;
+    }
+    
+    .logo {
+        width: 80px; /* Mindre storlek på logotypen för mindre skärmar */
+        height: 80px;
+    }
+
+    
     .profile {
         align-items: center; /* Centrera innehållet */
-        margin: 0 30px;
+        margin: 0 20px;
     }
 
     .profile.column {
@@ -228,15 +282,37 @@ nav {
     .profile:active {
         transform: scale(1.2);
     }
+  
+}
+
+@media only screen and (min-width:769px) and (max-width: 1199px) {
+    body { 
+        font-size: 16px;
+    }
+    .profile {
+        margin: 0 10px ;
+        align-items: center;
+
+    }
+
+    .profile:hover {
+        transform: scale(1.2);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     body {
+        
         font-size: 18px;
     }
 
     .profile {
-        margin: 0 100px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .profile:hover {
+        transform: scale(1.1);
     }
 
    
@@ -250,16 +326,11 @@ nav {
     .profile {
         margin: 0 140px;
     }
-
+    .profile:hover {
+        transform: scale(1.2);
+    }
    
 }
 
 
-
-
   
-    
-
-
-
-    
