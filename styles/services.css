@@ -49,7 +49,7 @@ h1 {
 .services {
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
+    margin
 }
 
 .card {
@@ -138,15 +138,15 @@ p {
 .faq-item p {
     font-size: 16px;
     padding: 10px;
-    color: #555;
+    color:  #dbdbdb;
     margin-top: 10px;
     font-family: sans-serif;
 }
 
 .partners-section {
-    padding: 15px;
-    background-color: rgb(240, 237, 237); /* Bakgrundsfärg för sektionen */
-    border-radius: 40px;
+    padding: 20px;
+    background-color: #ededed none; /* Bakgrundsfärg för sektionen */
+    border-radius: 15px;
 }
 
 .partners {
@@ -183,3 +183,52 @@ p {
     border-radius: 900px; /* Rundade hörn på bilderna */
 }
 
+
+/* Footer-styling */
+.footer {
+    padding: 20px; /* Lägg till padding */
+    background-color: #ffffff; /* Bakgrundsfärg på footern */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Footer-container för flexbox */
+.footer-container {
+    display: flex; /* Gör footern till en flexcontainer */
+    justify-content: space-between; /* Sprid ut innehållet */
+    align-items: center; /* Centrera innehållet vertikalt */
+}
+
+/* Styling för länkar och text */
+.footer-links {
+    margin: 0; /* Ta bort marginaler */
+}
+
+.footer-links a {
+    margin: 0 10px; /* Avstånd mellan länkar */
+    color: #000; /* Färg på länkar */
+    text-decoration: none; /* Ta bort understrykning */
+}
+
+.footer-links a:hover {
+    color: #007BFF; /* Ändra färg vid hovring */
+}
+
+footer p {
+    padding: 0; /* Ta bort padding */
+    color: #000000; /* Färg på texten */
+}
+
+/* Styling för social media */
+.social-media {
+    display: flex; /* Gör social media till en flexcontainer */
+}
+
+.social-media a {
+    margin: 0 10px; /* Avstånd mellan ikoner */
+    color: #000; /* Färg på ikoner */
+    font-size: 24px; /* Storlek på ikoner */
+}
+
+.social-media a:hover {
+    color: #007BFF; /* Ändra färg vid hovring */
+}
