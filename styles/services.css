@@ -92,22 +92,31 @@ p {
 .button {
     text-decoration: none;
     color: white;
-    background-color: #333;
+    background-color: #333; /* Initial background color */
     padding: 10px 20px;
     border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    font-family: sans-serif;
 }
+
+.button:hover {
+    background-color: white; /* Change to a new color on hover */
+    color: #333; /* Optionally keep or change text color */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+}
+
 
 .faq-section {
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .faq-section h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 15px;
     color: #333;
     font-family: sans-serif;
 }
@@ -143,27 +152,6 @@ p {
     font-family: sans-serif;
 }
 
-.partners-section {
-    padding: 20px;
-    background-color: #ededed none; /* Bakgrundsfärg för sektionen */
-    border-radius: 15px;
-}
-
-.partners {
-    color: #333;
-}
-
-.partners-title {
-    position: absolute; /* Gör att titeln kan placeras över bilderna */
-    top: 20px; /* Avstånd från toppen av sektionen */
-    left: 20px; /* Avstånd från vänster kant */
-    font-size: 32px; /* Storlek på titeln */
-    color: #333; /* Textfärg */
-    z-index: 1; /* Se till att titeln visas över bilderna */
-    justify-content: center;
-    font-family: sans-serif;
-}
-
 
 .partners-container {
     display: flex;
@@ -172,15 +160,28 @@ p {
     gap: 20px; /* Avstånd mellan bilderna */
 }
 
-.partner {
-    flex: 1 1 150px; /* Flexbox för att skapa en responsiv layout */
-    max-width: 150px; /* Maximal bredd för logotypen */
+
+.partners-section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center; /* Centers all text inside this section */
 }
+
+/* Additional styling for the h3 */
+.partners-section h3 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-align: center; /* Ensure h3 is centered */
+}
+
 
 .partner img {
     width: 100%; /* Gör bilden responsiv */
-    height: 100px; /* Bevara proportionerna */
-    border-radius: 900px; /* Rundade hörn på bilderna */
+    height: 50px; /* Bevara proportionerna */
+    border-radius: 500px; /* Rundade hörn på bilderna */
 }
 
 
@@ -216,6 +217,7 @@ p {
 footer p {
     padding: 0; /* Ta bort padding */
     color: #000000; /* Färg på texten */
+    font-family: sans-serif;
 }
 
 /* Styling för social media */
