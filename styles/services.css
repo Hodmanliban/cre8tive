@@ -49,7 +49,7 @@ h1 {
 .services {
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
+    margin:
 }
 
 .card {
@@ -138,15 +138,15 @@ p {
 .faq-item p {
     font-size: 16px;
     padding: 10px;
-    color: #555;
+    color:  #dbdbdb;
     margin-top: 10px;
     font-family: sans-serif;
 }
 
 .partners-section {
-    padding: 15px;
-    background-color: rgb(240, 237, 237); /* Bakgrundsfärg för sektionen */
-    border-radius: 40px;
+    padding: 20px;
+    background-color: #ededed none; /* Bakgrundsfärg för sektionen */
+    border-radius: 15px;
 }
 
 .partners {
@@ -184,9 +184,9 @@ p {
 }
 
 .footer {
-    background-color: lightgrey;
+    background-color: #ededed;
     position: relative;
-    height: 100px;
+    height: 150px;
     text-align: center;
     margin-top: 100px;
     clear: both;
@@ -194,23 +194,30 @@ p {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Space between social media and links */
-    align-items: center; /* Center items vertically */
-    padding: 0 20px; /* Optional: add some horizontal padding */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .social-media a {
     margin: 0 10px;
-    color: #000; /* Adjust the color as needed */
-    font-size: 24px; /* Adjust the size as needed */
-    transition: color 0.3s;
+    color: #000; /* Color for the icons */
+    font-size: 30px; /* Increase the size of the icons */
+    transition: color 0.3s; /* Smooth transition on hover */
 }
 
 .social-media a:hover {
-    color: #007BFF; /* Change color on hover */
+    color: #007BFF; /* Change color when hovered */
 }
 
 .footer-links a {
     margin: 0 10px;
-    color: #000; /* Adjust the color as needed */
+    color: #000;
 }
+
+/* Optional: Add some padding to the footer text */
+footer p {
+    padding-top: 10px;
+    color: #000000;
+}
+
