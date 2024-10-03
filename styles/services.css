@@ -143,17 +143,17 @@ p {
 .button {
     text-decoration: none;
     color: white;
-    background-color: #333; /* Initial background color */
+    background-color: #333; 
     padding: 10px 20px;
     border-radius: 20px;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    transition: background-color 0.3s, color 0.3s; 
     font-family: sans-serif;
 }
 
 .button:hover {
-    background-color: white; /* Change to a new color on hover */
-    color: #333; /* Optionally keep or change text color */
-    cursor: pointer; /* Changes cursor to indicate interactivity */
+    background-color: white; 
+    color: #333; 
+    cursor: pointer; 
 }
 
 
@@ -207,9 +207,9 @@ p {
 
 .partners-container {
     display: flex;
-    flex-wrap: wrap; /* Gör så att bilderna går till nästa rad om det behövs */
-    justify-content: center; /* Centrera bilderna horisontellt */
-    gap: 20px; /* Avstånd mellan bilderna */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
 }
 
 
@@ -218,72 +218,71 @@ p {
     padding: 20px;
     background-color: white;
     border-radius: 15px;
-    text-align: center; /* Centers all text inside this section */
+    text-align: center; 
 }
 
-/* Additional styling for the h3 */
 .partners-section h3 {
     font-size: 15px;
     color: #333;
     margin-bottom: 20px;
     font-family: sans-serif;
-    text-align: center; /* Ensure h3 is centered */
+    text-align: center; 
 }
 
 
 .partner img {
-    width: 100%; /* Gör bilden responsiv */
-    height: 50px; /* Bevara proportionerna */
-    border-radius: 500px; /* Rundade hörn på bilderna */
+    width: 100%; 
+    height: 50px; 
+    border-radius: 500px; 
+    
 }
 
 
-/* Footer-styling */
 .footer {
-    padding: 20px; /* Lägg till padding */
-    background-color: #ffffff; /* Bakgrundsfärg på footern */
+    margin-top: 50px;
+    padding: 20px; 
+    background-color: #ffffff; 
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Footer-container för flexbox */
+
 .footer-container {
-    display: flex; /* Gör footern till en flexcontainer */
-    justify-content: space-between; /* Sprid ut innehållet */
-    align-items: center; /* Centrera innehållet vertikalt */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
-/* Styling för länkar och text */
+
 .footer-links {
-    margin: 0; /* Ta bort marginaler */
+    margin: 0; 
 }
 
 .footer-links a {
-    margin: 0 10px; /* Avstånd mellan länkar */
-    color: #000; /* Färg på länkar */
-    text-decoration: none; /* Ta bort understrykning */
+    margin: 0 10px; 
+    color: #000; 
+    text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: #007BFF; /* Ändra färg vid hovring */
+    color: #007BFF; 
 }
 
 footer p {
-    padding: 0; /* Ta bort padding */
-    color: #000000; /* Färg på texten */
+    padding: 0; 
+    color: #000000; 
     font-family: sans-serif;
 }
 
-/* Styling för social media */
 .social-media {
-    display: flex; /* Gör social media till en flexcontainer */
+    display: flex; 
 }
 
 .social-media a {
-    margin: 0 10px; /* Avstånd mellan ikoner */
-    color: #000; /* Färg på ikoner */
-    font-size: 24px; /* Storlek på ikoner */
+    margin: 0 10px; 
+    color: #000; 
+    font-size: 24px; 
 }
 
 .social-media a:hover {
-    color: #007BFF; /* Ändra färg vid hovring */
+    color: #007BFF; 
 }
