@@ -12,6 +12,7 @@
         border-radius: 50%;
         border: 1px solid black;
     }
+<<<<<<< HEAD
 /* Footer-styling */
 .footer {
     padding: 20px; /* Lägg till padding */
@@ -63,3 +64,9 @@ footer p {
 
 
     
+=======
+
+    body{
+        font-family: sans-serif;
+    }
+>>>>>>> landing-page
