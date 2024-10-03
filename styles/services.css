@@ -11,73 +11,21 @@ body {
     background-repeat: no-repeat;
 }
 
-.logo-container {
-    position: fixed; /* Logo moves with the scroll */
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    z-index: 1000;
-}
-
-.logo {
-
-    background: url("../images/Cre8tive 2.png");
-    width: 100px; /* Set desired width for the logo */
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    padding-top: 30px;
-    margin-left: 650px;
-}
-
-.navbar .menu a:not(:last-child){
-    color: #ffffff;
-    margin-left: 20px;
-    font-size: 20px;
-    transition-duration: 0.4s;
-    letter-spacing: 0.5px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-  
-.navbar .menu a:not(:last-child):hover{
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 10px;
-}
-  
-.navbar .menu .btn-contact{
-    color: #ffffff;
-    margin-left: 20px;
-    padding: 10px 25px;
-    font-size: 18px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.navbar .menu .btn-contact:hover{
-    background: #ffffff;
-    color: #2e2c2c;
-}
-
-
 .hero {
     width: 100%;
     height: 600px; /* Full höjd på skärmen */
-    background-color: #dedbdb;
+    background-image: url(https://i.pinimg.com/originals/a3/59/b0/a359b0a8bb692bfb66e7a8f7ec4b7767.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
     text-align: center;
     position: relative;
     border-radius: 10px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 h1 {
@@ -85,37 +33,17 @@ h1 {
     padding-top: 50px;
     font-size: 42px;
     margin-bottom: 30px;
-    color: black;
+    color: white;
+    font-family: sans-serif;
 }
 
 .hero-button {
     text-decoration: none;
-    color: white;
-    background-color: #333;
+    color: black;
+    background-color: white;
     padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.section {
-    padding: 20px;
-}
-
-.customer-benefits {
-    display: flex; /* Flexbox aktiverad */
-    align-items: center; /* Centra innehållet vertikalt */
-    justify-content: center; /* Centrera horisontellt om nödvändigt */
-    margin-top: 10px; /* Lägger till lite utrymme ovanför sektionen */
-}
-
-.customer-image {
-    display: flex;
-    width: 100px; /* Anpassa storleken på bilden */
-    height: 50px; /* Hålla bildförhållandet */
-}
-
-.text-content {
-    background-color:  rgb(240, 237, 237);
-    width: 100px;  
+    border-radius: 20px;
+    font-family: sans-serif;
 }
 
 .services {
@@ -135,25 +63,30 @@ h1 {
 
 .icon {
     font-size: 50px;
-    color: #07829e;
+    color: grey;
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
     padding: 10px;
     margin-bottom: 20px;
     background-color: #f4f4f4;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-family: sans-serif;
 }
 
 p {
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 .button {
@@ -161,7 +94,7 @@ p {
     color: white;
     background-color: #333;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .faq-section {
@@ -176,6 +109,7 @@ p {
     margin-bottom: 20px;
     font-size: 28px;
     color: #333;
+    font-family: sans-serif;
 }
 
 .faq-container {
@@ -198,6 +132,7 @@ p {
     color: #333;
     outline: none;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .faq-item p {
@@ -205,6 +140,7 @@ p {
     padding: 10px;
     color: #555;
     margin-top: 10px;
+    font-family: sans-serif;
 }
 
 .partners-section {
@@ -224,6 +160,8 @@ p {
     font-size: 32px; /* Storlek på titeln */
     color: #333; /* Textfärg */
     z-index: 1; /* Se till att titeln visas över bilderna */
+    justify-content: center;
+    font-family: sans-serif;
 }
 
 
