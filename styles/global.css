@@ -35,6 +35,7 @@
     margin: 0 10px; /* Avstånd mellan länkar */
     color: #000; /* Färg på länkar */
     text-decoration: none; /* Ta bort understrykning */
+   
 }
 
 .footer-links a:hover {
@@ -60,6 +61,3 @@ footer p {
 .social-media a:hover {
     color: #007BFF; /* Ändra färg vid hovring */
 }
-
-
-    
