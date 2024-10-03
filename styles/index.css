@@ -94,9 +94,6 @@
    
 }
 
-#intro-section {
-   
-}
 
 .box-1{
     display: grid;
@@ -124,6 +121,7 @@ h2{
 img{
     width: 500px;
     height: 450px;
+    border-radius: 5px;
 }
 
 #section-2{
