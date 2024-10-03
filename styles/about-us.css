@@ -267,7 +267,7 @@ nav {
     
     .profile {
         align-items: center; /* Centrera innehållet */
-        margin: 0 30px;
+        margin: 0 20px;
     }
 
     .profile.column {
@@ -290,7 +290,8 @@ nav {
         font-size: 16px;
     }
     .profile {
-        margin: 0 100px ;
+        margin: 0 10px ;
+        align-items: center;
 
     }
 
@@ -301,15 +302,17 @@ nav {
 
 @media only screen and (min-width: 1200px) {
     body {
+        
         font-size: 18px;
     }
 
     .profile {
-        margin: 0 100px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .profile:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
    
