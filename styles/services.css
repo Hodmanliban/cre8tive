@@ -49,7 +49,7 @@ h1 {
 .services {
     display: flex;
     justify-content: space-around;
-    margin:
+    margin
 }
 
 .card {
@@ -183,41 +183,52 @@ p {
     border-radius: 900px; /* Rundade hörn på bilderna */
 }
 
+
+/* Footer-styling */
 .footer {
-    background-color: #ededed;
-    position: relative;
-    height: 150px;
-    text-align: center;
-    margin-top: 100px;
-    clear: both;
+    padding: 20px; /* Lägg till padding */
+    background-color: #ffffff; /* Bakgrundsfärg på footern */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/* Footer-container för flexbox */
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    display: flex; /* Gör footern till en flexcontainer */
+    justify-content: space-between; /* Sprid ut innehållet */
+    align-items: center; /* Centrera innehållet vertikalt */
 }
 
-.social-media a {
-    margin: 0 10px;
-    color: #000; /* Color for the icons */
-    font-size: 30px; /* Increase the size of the icons */
-    transition: color 0.3s; /* Smooth transition on hover */
-}
-
-.social-media a:hover {
-    color: #007BFF; /* Change color when hovered */
+/* Styling för länkar och text */
+.footer-links {
+    margin: 0; /* Ta bort marginaler */
 }
 
 .footer-links a {
-    margin: 0 10px;
-    color: #000;
+    margin: 0 10px; /* Avstånd mellan länkar */
+    color: #000; /* Färg på länkar */
+    text-decoration: none; /* Ta bort understrykning */
 }
 
-/* Optional: Add some padding to the footer text */
+.footer-links a:hover {
+    color: #007BFF; /* Ändra färg vid hovring */
+}
+
 footer p {
-    padding-top: 10px;
-    color: #000000;
+    padding: 0; /* Ta bort padding */
+    color: #000000; /* Färg på texten */
 }
 
+/* Styling för social media */
+.social-media {
+    display: flex; /* Gör social media till en flexcontainer */
+}
+
+.social-media a {
+    margin: 0 10px; /* Avstånd mellan ikoner */
+    color: #000; /* Färg på ikoner */
+    font-size: 24px; /* Storlek på ikoner */
+}
+
+.social-media a:hover {
+    color: #007BFF; /* Ändra färg vid hovring */
+}
