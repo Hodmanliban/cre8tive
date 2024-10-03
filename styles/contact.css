@@ -1,0 +1,197 @@
+
+/* ===== Global Body Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff, #565657); /* Vit till mörkgrå gradient */
+    margin: 0;
+}
+
+/* ===== Container for the entire page ===== */
+.container {
+    display: flex; /* Gör att navbar och content ligger i en kolumn */
+    flex-direction: column;
+}
+
+/* ===== Navbar styles ===== */
+.navbar {
+    display: flex; /* Lägger navbaren element bredvid varandra */
+    justify-content: space-between; /* Fördelar utrymmet mellan logotyp och meny */
+    padding: 20px; /* Lägg till padding */
+   
+}
+
+/* ===== Content area for form and image ===== */
+.content {
+    display: flex; /* Lägger formuläret och bilden bredvid varandra */
+    justify-content: space-between; /* Centrerar dem horisontellt */
+    align-items: center; /* Justerar dem till toppen */
+    padding: 20px; /* Lägg till padding */
+}
+
+/* ===== Form container styles ===== */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Standardbredd på formuläret */
+    margin-right: 20px; /* Avstånd mellan formuläret och bilden */
+}
+
+/* ===== Image container styles ===== */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centrerar bilden */
+    
+}
+
+.office-image {
+    width: 800px; /* Justera storlek om nödvändigt */
+    height: 600px; /* Bevara proportioner */
+    border-radius: 10px; /* Rundade hörn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.office-image:hover {
+    transform: scale(1.05); /* Zoomar in något vid hover */
+}
+
+/* ===== Form styles ===== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #0c0c0d; /* Blå färg för etiketter */
+}
+
+input, textarea, button {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dfe7fd; /* Ljusblå kant */
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); /* Lätt inre skugga */
+}
+
+input:focus, textarea:focus {
+    border-color: #090909;
+    outline: none;
+}
+
+/* ===== Button styles ===== */
+button {
+    background: #101010; /* Blå färg för knappen */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #000000; /* Mörkare blå nyans vid hover */
+}
+
+/* ===== Logo styles ===== */
+.logo-container {
+    position: fixed; /* Logo moves with the scroll */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px; /* Set desired width for the logo */
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+  
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-top: 30px;
+    margin-left: 700px;
+}
+
+.navbar .menu a:not(:last-child){
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+  
+.navbar .menu a:not(:last-child):hover{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.navbar .menu .btn-contact{
+    color: #ffffff;
+    margin-left: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.navbar .menu .btn-contact:hover{
+    background: #ffffff;
+    color: #2e2c2c;
+}
+
+/* Footer-styling */
+.footer {
+    padding: 20px; /* Lägg till padding */
+    background-color: #ffffff; /* Bakgrundsfärg på footern */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Footer-container för flexbox */
+.footer-container {
+    display: flex; /* Gör footern till en flexcontainer */
+    justify-content: space-between; /* Sprid ut innehållet */
+    align-items: center; /* Centrera innehållet vertikalt */
+}
+
+/* Styling för länkar och text */
+.footer-links {
+    margin: 0; /* Ta bort marginaler */
+}
+
+.footer-links a {
+    margin: 0 10px; /* Avstånd mellan länkar */
+    color: #000; /* Färg på länkar */
+    text-decoration: none; /* Ta bort understrykning */
+}
+
+.footer-links a:hover {
+    color: #007BFF; /* Ändra färg vid hovring */
+}
+
+footer p {
+    padding: 0; /* Ta bort padding */
+    color: #000000; /* Färg på texten */
+}
+
+/* Styling för social media */
+.social-media {
+    display: flex; /* Gör social media till en flexcontainer */
+}
+
+.social-media a {
+    margin: 0 10px; /* Avstånd mellan ikoner */
+    color: #000; /* Färg på ikoner */
+    font-size: 24px; /* Storlek på ikoner */
+}
+
+.social-media a:hover {
+    color: #007BFF; /* Ändra färg vid hovring */
+}
