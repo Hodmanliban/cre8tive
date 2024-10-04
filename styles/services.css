@@ -227,6 +227,17 @@ p {
     border-radius: 500px;
 }
 
+.footer-links a {
+    text-decoration: none;
+}
+
+.social-media a, .footer-links a {
+    margin: 0 10px;
+    color: #000000; 
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
 @media screen and (min-width: 1200px) {
     .navbar {
         margin-left: 600px;
