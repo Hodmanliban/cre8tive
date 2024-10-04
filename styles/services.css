@@ -30,6 +30,7 @@ body {
     margin-bottom: 100px;
     padding-top: 30px;
     margin-left: 650px;
+    text-decoration: none !important;
 }
 
 .navbar .menu a:not(:last-child) {
@@ -54,11 +55,13 @@ body {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none !important;
 }
 
 .navbar .menu .btn-contact:hover {
     background: #fff;
     color: #2e2c2c;
+    text-decoration: none !important;
 }
 
 .hero-box .hero-heading { 
@@ -66,6 +69,7 @@ body {
     font-size: 50px;
     line-height: 65px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-left: 90px;
 }
 
 .hero-box .hero-desc {
@@ -74,10 +78,14 @@ body {
     line-height: 27px;
     padding: 30px 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-left: 90px;
+    text-decoration: none !important;
 }
 
 .hero-box .btn-box {
     margin-top: 40px;
+    margin-left: 90px;
+    text-decoration: none !important;
 }
 
 .hero-box .cta-btn {
