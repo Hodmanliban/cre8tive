@@ -188,6 +188,7 @@ nav {
 
     .navbar .menu a:not(:last-child){
         font-size: 10px;
+        
     }
 
     .navbar .menu .btn-contact{
