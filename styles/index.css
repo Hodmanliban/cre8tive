@@ -66,6 +66,7 @@
     font-size: 50px;
     line-height: 65px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-left: 72px;
 }
 
 .hero-box .hero-desc{
@@ -74,6 +75,7 @@
     line-height: 27px;
     padding: 30px 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-left: 72px;
 }
 
 .hero-box .btn-box{
@@ -87,6 +89,7 @@
     border-radius: 50px;
     color: #2e2c2c;
     font-size: 18px;
+    margin-left: 72px;
 }
 
 .hero-box .cta-btn:hover{
@@ -131,7 +134,7 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 100px;
-    height: 550px;
+    height: 650px;
     margin-top: 50px;
 
 }
@@ -191,9 +194,16 @@ input{
 
 
 @media (max-width: 1200px) {
+    .logo-container{
+        position: absolute;
+    }
     .navbar {
-        margin-left: 0;
+        margin-left: 60px;
         padding-left: 50px;
+    }
+
+    .hero-box .cta-btn{
+        margin-left: 0px;
     }
 
     .menu a {
@@ -272,6 +282,10 @@ input{
 
 @media (max-width: 768px) {
 
+    .logo-container{
+        position: absolute;
+    }
+
     #hero{
         height: 650px;
     }
@@ -345,6 +359,9 @@ input{
 
 @media (max-width: 480px) {
 
+    .logo-container{
+    position: absolute;
+    }
     #hero{
         height: 600px;
     }
@@ -376,6 +393,8 @@ input{
         padding: 0 5px; 
         height: auto;
     }
+
+    
 
 
     .intro, .intro-2 {
