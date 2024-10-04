@@ -66,6 +66,7 @@
     font-size: 50px;
     line-height: 65px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-left: 72px;
 }
 
 .hero-box .hero-desc{
@@ -74,6 +75,7 @@
     line-height: 27px;
     padding: 30px 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-left: 72px;
 }
 
 .hero-box .btn-box{
@@ -87,6 +89,7 @@
     border-radius: 50px;
     color: #2e2c2c;
     font-size: 18px;
+    margin-left: 72px;
 }
 
 .hero-box .cta-btn:hover{
@@ -114,7 +117,6 @@ h2{
     margin-left: 160px;
     margin-top: 80px;
     font-size: 40px;
-    display: block;
     line-height: 65px;
 }
 
@@ -128,24 +130,23 @@ img{
     background-color: #e8e8e8;
 }
 .box-2{
+    background-color: #e8e8e8;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 550px;
+    column-gap: 100px;
+    height: 650px;
     margin-top: 50px;
-    background-color: #e8e8e8;
-    margin-left: 160px;
 
 }
 
 .intro-2{
     font-size: 18px;
     line-height: 30px;
-    margin-right: 160px;
+    margin-left: 160px;
 }
 
 .second-headline{
     margin-bottom: 50px;
-    margin-left: 800px;
     padding-top: 80px;
 }
 
@@ -189,4 +190,330 @@ input{
     color:#2e2c2c;
     background:#e8e8e8;
     border: 1px solid #2e2c2c;
+}
+
+
+
+.footer {
+    background-color: #ffffff; 
+    position: relative;
+    height: auto;
+    text-align: center;
+    margin-top: 100px;
+    clear: both;
+    padding: 20px; 
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px; 
+    flex-wrap: wrap; 
+}
+
+.social-media, .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-media a, .footer-links a {
+    margin: 0 10px;
+    color: #000; 
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover, .footer-links a:hover {
+    color: #e8e8e8; 
+}
+
+footer p {
+    padding: 0; 
+    color: #000000; 
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.text-box {
+    margin: 0 20px;
+}
+
+.text-box p {
+    margin: 5px 0;
+}
+
+
+
+@media (max-width: 1200px) {
+    .logo-container{
+        position: absolute;
+    }
+    .navbar {
+        margin-left: 60px;
+        padding-left: 50px;
+    }
+
+    .hero-box .cta-btn{
+        margin-left: 0px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .hero-box .hero-heading {
+        font-size: 45px;
+        line-height: 60px;
+        margin-left: 30px;
+    }
+
+    .btn-box{
+        margin-left: 30px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 30px;
+    }
+
+    .box-1{
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        column-gap: 20px;
+        height: auto;
+    }
+
+    .box-2 {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        column-gap: 20px;
+        padding-right: 10px;
+        height: auto;
+
+    }
+
+   
+    .box-1 img, .box-2 img {
+        width: 300px;
+        height: 300px;
+        align-items: center;
+    }
+
+    h2{
+        margin-left: 30px;
+        font-size: 35px;
+    }
+
+    .second-headline{
+       margin-left: 30px;
+       font-size: 35px;
+    }
+
+    .intro, .intro-2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        line-height: 20px;
+    }
+
+    .intro-2{
+        margin-bottom: 50px;
+    }
+
+    form {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    input, .btn-subscribe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo-container{
+        position: absolute;
+    }
+
+    #hero{
+        height: 650px;
+    }
+
+    .navbar .menu a:not(:last-child){
+        font-size: 15px;
+    }
+
+    .navbar .menu .btn-contact{
+        font-size: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-box .hero-heading {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .box-1, .box-2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: auto;
+    }
+
+    .box-2{
+        padding-bottom: 60px;
+    }
+
+    .box-1 img, .box-2 img {
+        width: 300px;
+        height: 250px;
+        margin: 20px auto;
+    }
+
+    .intro, .intro-2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h2, .second-headline {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input, .btn-subscribe {
+        width: 100%;
+    }
+
+    br{
+        display: none;
+    }
+    
+        .social-media a, .footer-links a {
+            font-size: 20px;
+            margin: 5px;
+        }
+    
+        .footer-links {
+            margin-top: 10px;
+        }
+    
+        footer p {
+            margin-top: 15px;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .text-container {
+            flex-direction: column;
+        }
+        
+        .text-box {
+            margin-bottom: 10px;
+        }
+    
+}
+
+
+
+@media (max-width: 480px) {
+
+    .logo-container{
+    position: absolute;
+    }
+    #hero{
+        height: 600px;
+    }
+    .hero-box .hero-heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .navbar .menu a:not(:last-child){
+        font-size: 10px;
+    }
+
+    .navbar .menu .btn-contact{
+        font-size: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .box-1, .box-2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0 5px; 
+        height: auto;
+    }
+
+
+    .intro, .intro-2 {
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 20px; 
+        max-width: 90%; 
+        margin-bottom: 20px;
+    }
+
+
+    h2, .second-headline {
+        font-size: 20px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    form {
+        padding-top: 50px;
+    }
+
+    .social-media a, .footer-links a {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    .text-box p {
+        font-size: 14px;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
 }

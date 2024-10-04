@@ -1,63 +1,128 @@
 
 .logo-container {
-        position: fixed; /* Logo moves with the scroll */
-        top: 20px; /* Adjust as needed */
-        left: 20px; /* Adjust as needed */
+        position: fixed; 
+        top: 20px; 
+        left: 20px; 
         z-index: 1000;
     }
     
  .logo {
-        width: 100px; /* Set desired width for the logo */
+        width: 100px; 
         height: 100px;
         border-radius: 50%;
         border: 1px solid black;
     }
-/* Footer-styling */
+
+    body{
+        font-family: sans-serif;
+    }
+
+
 .footer {
-    padding: 20px; /* Lägg till padding */
-    background-color: #ffffff; /* Bakgrundsfärg på footern */
+    background-color: #ffffff; 
+    position: relative;
+    height: auto;
+    text-align: center;
+    margin-top: 100px;
+    clear: both;
+    padding: 20px; 
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Footer-container för flexbox */
 .footer-container {
-    display: flex; /* Gör footern till en flexcontainer */
-    justify-content: space-between; /* Sprid ut innehållet */
-    align-items: center; /* Centrera innehållet vertikalt */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px; 
+    flex-wrap: wrap; 
 }
 
-/* Styling för länkar och text */
-.footer-links {
-    margin: 0; /* Ta bort marginaler */
+.social-media, .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
+
 
 .footer-links a {
     margin: 0 10px; /* Avstånd mellan länkar */
     color: #000; /* Färg på länkar */
     text-decoration: none; /* Ta bort understrykning */
-   
 }
 
-.footer-links a:hover {
-    color: #007BFF; /* Ändra färg vid hovring */
+.social-media a, .footer-links a {
+    font-size: 24px;
+    transition: color 0.3s;
+
+}
+
+.social-media a:hover, .footer-links a:hover {
+    color: #e8e8e8; 
 }
 
 footer p {
-    padding: 0; /* Ta bort padding */
-    color: #000000; /* Färg på texten */
+    padding: 0; 
+    color: #000000; 
 }
 
-/* Styling för social media */
-.social-media {
-    display: flex; /* Gör social media till en flexcontainer */
+.text-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.social-media a {
-    margin: 0 10px; /* Avstånd mellan ikoner */
-    color: #000; /* Färg på ikoner */
-    font-size: 24px; /* Storlek på ikoner */
+.text-box {
+    margin: 0 20px;
 }
 
-.social-media a:hover {
-    color: #007BFF; /* Ändra färg vid hovring */
+.text-box p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+.social-media a, .footer-links a {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+footer p {
+    margin-top: 15px;
+}
+
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container {
+    flex-direction: column;
+}
+
+.text-box {
+    margin-bottom: 10px;
+}
+}
+
+@media (max-width: 480px) {
+
+.social-media a, .footer-links a {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.footer-container {
+    padding: 10px;
+}
+
+.text-box p {
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 14px;
+}
 }

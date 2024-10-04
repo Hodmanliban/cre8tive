@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../styles/contact.css"> <!-- Länka till CSS-filen -->
+    <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
-    <p>hej</p>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-container"> 
+                <img src="../images/Cre8tive 2.png" alt="Logo" class="logo">
+            </div>
+            <div class="menu">
+                <a href="index.html"> Hem </a>
+                <a href="/pages/services.html"> Våra tjänster</a>
+                <a href="/pages/about-us.html">Om oss</a>
+                <a href="/pages/contact.html" class="btn-contact"> Kontakta oss</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="form-container">
+                <h1>Kontakta oss</h1>
+                <form id="contactForm">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Meddelande:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Sänd</button>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <img class="office-image" src="../images/iStock-1410270664.jpg" alt="Office Image">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+    
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+    
 </body>
 </html>
