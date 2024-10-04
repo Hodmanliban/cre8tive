@@ -1,4 +1,3 @@
-
 html {
     background-color: #ffffff;
     width: 100%;
@@ -10,9 +9,7 @@ html {
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-}       
-
-
+}
 
 #hero{
     width: 100%;    
@@ -22,20 +19,18 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 32px;
-
 }
 
 .container{
     max-width: 1140px;
     margin: 0 auto;   
 }
-  
+
 .navbar{
     display: flex;
     justify-content: flex-end;
     margin-bottom: 100px;
     padding-top: 30px;
-   
 }
 
 .navbar .menu a:not(:last-child){
@@ -51,7 +46,7 @@ html {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
 }
-  
+
 .navbar .menu .btn-contact{
     color: #ffffff;
     margin-left: 20px;
@@ -97,213 +92,293 @@ html {
 
 .hero-box .cta-btn:hover{
     background: rgba(255, 255, 255, 0.2);
-   
 }
 
-
-
-h1 {
-    margin-left: 120px;
-}
-
-
-/* Container for navigation */
 nav {
     margin: 0 100px;
 }
 
-/* Navigation link styles */
 .nav-link {
-    text-decoration: none; /* Remove underline */
-    color: black; /* Inherit color or set specific color */
-    margin: 0 50px; /* Space between the links */
-    display: inline-block; /* Ensures the zoom effect works on the entire link */
-    transition: transform 0.3s ease; /* Smooth transition for zoom */
+    text-decoration: none;
+    color: black;
+    margin: 0 50px;
+    display: inline-block;
+    transition: transform 0.3s ease;
     font-size: 10px;
-    
 }
 
-/* Zoom effect on hover */
 .nav-link:hover {
-    transform: scale(1.2); /* Adjust the scale factor for zoom */
+    transform: scale(1.2);
 }
 
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
 
-
-/* Container for the boxes */
-
-    .boxes {
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Rows adjust based on content */
-        gap: 20px; /* Space between the boxes */
-        padding: 20px; /* Padding around the grid */
-    }
-    
-
-
-/* Make the image circular */
 .profile img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Make image circular */
-    object-fit: cover; /* Ensure the image fits properly */
-   
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-
-/* Profile text container */
 .profile div {
     display: flex;
-    flex-direction: column; /* Stack text vertically */
-    justify-content: center; /* Center text vertically */
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Each profile box */
 .profile {
     display: flex;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-bottom: 20px;
-    transition: transform 0.3s ease; /* Behåll transition här */
+    transition: transform 0.3s ease;
     align-items: center;
     justify-content: space-between;
-    margin: 0 100px; /* Justera marginaler här */
+    margin: 0 100px;
 }
 
-/* Odd profiles layout */
 .profile:nth-child(odd) {
-    flex-direction: row; /* Bild till vänster, text till höger */
+    flex-direction: row;
 }
 
-/* Even profiles layout */
 .profile:nth-child(even) {
-    flex-direction: row-reverse; /* Bild till höger, text till vänster */
-    background-color: #e8e8e8; /* Bakgrundsfärg för att särskilja */
+    flex-direction: row-reverse;
+    background-color: #e8e8e8;
 }
 
-
-.footer {
-    background-color: lightgrey;
-    position: relative;
-    height: 100px;
-    text-align: center;
-    margin-top: 100px;
-    clear: both;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between; /* Space between social media and links */
-    align-items: center; /* Center items vertically */
-    padding: 0 20px; /* Optional: add some horizontal padding */
-}
 
 .social-media a {
-    margin: 0 10px;
-    color: #000; /* Adjust the color as needed */
-    font-size: 24px; /* Adjust the size as needed */
-    transition: color 0.3s;
+    color: black;
+    margin-right: 15px; 
+    font-size: 24px; 
+    transition: color 0.3s ease;
 }
+
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
 
 .social-media a:hover {
-    color: #007BFF; /* Change color on hover */
-}
-
-.footer-links a {
-    margin: 0 10px;
-    color: #000; /* Adjust the color as needed */
+    color: #e8e8e8; 
 }
 
 
-
-
-/* Media queries for responsive layout */
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 494px) {
 
     body {
         font-size: 10px;
     }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    .hero-box .hero-heading {
+        font-size: 40px;
+    }
+
+    .navbar .menu a:not(:last-child){
+        font-size: 10px;
+    }
+
+    .navbar .menu .btn-contact{
+        font-size: 8px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .hero-box .cta-btn{
+        font-size: 11px;
+    }
+
+    .logo-container {
+        position: absolute !important;
+    }
+
+    .logo {
+        height: 80px !important;
+        width: 80px !important;
+    }
+
     .profile {
         align-items: center;
         margin: 0 10px;
+        height: auto;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    p {
+        margin: 0 auto;
+        line-height: 20px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    div h1 {
+        margin-bottom: 10px;
+        margin: 0 auto;
+        font-size: 13px;
     }
 
     .profile.column {
         flex-direction: column;
     }
+
     .profile:active {
         transform: scale(1.1);
     }
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 495px) and (max-width: 768px) {
+
     body {
         font-size: 12;
     }
-   
+
+    .hero-box .hero-heading {
+        font-size: 50px;
+    }
+
+    .hero-box .hero-desc {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
     .navbar .menu a:not(:last-child) {
         font-size: 15px;
-        color: rgb(255, 255, 255) ;
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar .menu .btn-contact{
+        font-size: 12px;
+    }
+
+    .hero-box .cta-btn{
+        font-size: 15px;
     }
 
     .navbar .menu a:not(:last-child):active{
         border-bottom: 1px solid #ffffff;
         padding-bottom: 4px;
     }
+
     .logo-container {
-        top: 10px; /* Justera logotypens position för mindre skärmar */
+        top: 10px;
         left: 10px;
-    }
-    
-    .logo {
-        width: 80px; /* Mindre storlek på logotypen för mindre skärmar */
-        height: 80px;
+        position: absolute !important;
     }
 
-    
     .profile {
-        align-items: center; /* Centrera innehållet */
-        margin: 0 20px;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
     }
 
     .profile.column {
         flex-direction: column;
-
     }
 
     .profile img {
         width: 100px;
         height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
     }
+
+    p {
+        margin: 0 auto;
+        line-height: 30px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    div h1 {
+        margin-bottom: 10px;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
     .profile:active {
         transform: scale(1.2);
     }
-  
+
 }
 
 @media only screen and (min-width:769px) and (max-width: 1199px) {
+
     body { 
         font-size: 16px;
     }
-    .profile {
-        margin: 0 10px ;
-        align-items: center;
 
+    .profile {
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
     }
 
     .profile:hover {
         transform: scale(1.2);
     }
+
+    p {
+        margin-left: 100px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    div h1 {
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .hero-box .cta-btn {
+        margin-left: 100px !important;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
+
     body {
-        
         font-size: 18px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
     }
 
     .profile {
@@ -315,21 +390,61 @@ nav {
         transform: scale(1.1);
     }
 
-   
+    p {
+        margin-left: 100px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    div h1 {
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+
+    .hero-box .cta-btn {
+        margin-left: 100px !important;
+    }
+
 }
 
 @media only screen and (min-width: 1601px) {
+
     body {
-        font-size: 20px; /* Justera storleken som behövs */
+        font-size: 20px;
     }
 
     .profile {
-        margin: 0 140px;
+        width: 80%;
+        margin: 0 auto;
     }
+
+    .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
     .profile:hover {
         transform: scale(1.2);
     }
-   
+
+    p {
+        margin-left: 100px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    div h1 {
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+
+    .hero-box .cta-btn {
+        margin-left: 100px !important;
+    }
+
 }
 
 

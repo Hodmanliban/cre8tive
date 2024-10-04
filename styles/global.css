@@ -42,11 +42,17 @@
     margin-bottom: 10px;
 }
 
+
+.footer-links a {
+    margin: 0 10px; /* Avstånd mellan länkar */
+    color: #000; /* Färg på länkar */
+    text-decoration: none; /* Ta bort understrykning */
+}
+
 .social-media a, .footer-links a {
-    margin: 0 10px;
-    color: #000; 
     font-size: 24px;
     transition: color 0.3s;
+
 }
 
 .social-media a:hover, .footer-links a:hover {
@@ -71,10 +77,7 @@ footer p {
 .text-box p {
     margin: 5px 0;
 }
-
-    body{
-        font-family: sans-serif;
-    }
+ 
 
 @media (max-width: 768px) {
 .social-media a, .footer-links a {
