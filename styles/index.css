@@ -193,6 +193,64 @@ input{
 }
 
 
+
+.footer {
+    background-color: #ffffff; 
+    position: relative;
+    height: auto;
+    text-align: center;
+    margin-top: 100px;
+    clear: both;
+    padding: 20px; 
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px; 
+    flex-wrap: wrap; 
+}
+
+.social-media, .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-media a, .footer-links a {
+    margin: 0 10px;
+    color: #000; 
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover, .footer-links a:hover {
+    color: #e8e8e8; 
+}
+
+footer p {
+    padding: 0; 
+    color: #000000; 
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.text-box {
+    margin: 0 20px;
+}
+
+.text-box p {
+    margin: 5px 0;
+}
+
+
+
 @media (max-width: 1200px) {
     .logo-container{
         position: absolute;
@@ -352,8 +410,34 @@ input{
     br{
         display: none;
     }
-}
+    
+        .social-media a, .footer-links a {
+            font-size: 20px;
+            margin: 5px;
+        }
+    
+        .footer-links {
+            margin-top: 10px;
+        }
+    
+        footer p {
+            margin-top: 15px;
+        }
 
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .text-container {
+            flex-direction: column;
+        }
+        
+        .text-box {
+            margin-bottom: 10px;
+        }
+    
+}
 
 
 
@@ -394,8 +478,6 @@ input{
         height: auto;
     }
 
-    
-
 
     .intro, .intro-2 {
         margin: 0 auto;
@@ -417,5 +499,21 @@ input{
         padding-top: 50px;
     }
 
+    .social-media a, .footer-links a {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    .text-box p {
+        font-size: 14px;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
     
 }
