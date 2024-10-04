@@ -9,26 +9,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: sans-serif;
 }
 
-<<<<<<< HEAD
-#hero {
-    width: 100%;
-    height: 600px;
-    background: url("../images/reneehero.webp") center/cover no-repeat;
-    padding-top: 32px;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.navbar {
-=======
 #hero{
     width: 100%;    
-    height: 850px;
+    height: 690px;
     background: url("../images/Designer-3.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +29,6 @@ body {
 }
   
 .navbar{
->>>>>>> origin
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
@@ -51,36 +36,12 @@ body {
     margin-left: 650px;
 }
 
-<<<<<<< HEAD
-.navbar .menu a:not(:last-child) {
-    color: #fff;
-    margin-left: 20px;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    transition-duration: 0.4s;
-}
-
-.navbar .menu a:not(:last-child):hover {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
-}
-
-.navbar .menu .btn-contact {
-    color: #fff;
-    margin-left: 20px;
-    padding: 10px 25px;
-    font-size: 18px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-=======
 .navbar .menu a:not(:last-child){
     color: #ffffff;
     margin-left: 20px;
     font-size: 20px;
     transition-duration: 0.4s;
     letter-spacing: 0.5px;
->>>>>>> origin
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
   
@@ -331,28 +292,27 @@ p {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Space between social media and links */
-    align-items: center; /* Center items vertically */
-    padding: 0 20px; /* Optional: add some horizontal padding */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
 }
 
 .social-media a {
     margin: 0 10px;
-    color: #000; /* Adjust the color as needed */
-    font-size: 24px; /* Adjust the size as needed */
+    color: #000; 
+    font-size: 24px; 
     transition: color 0.3s;
 }
 
 .social-media a:hover {
-    color: #007BFF; /* Change color on hover */
+    color: #007BFF; 
 }
 
 .footer-links a {
     margin: 0 10px;
-    color: #000; /* Adjust the color as needed */
+    color: #000; 
 }
 
-/* Footer-styling */
 .footer {
     margin-top: 50px;
     padding: 20px;
