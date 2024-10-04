@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 #hero {
@@ -30,7 +31,6 @@ body {
     margin-bottom: 100px;
     padding-top: 30px;
     margin-left: 650px;
-    text-decoration: none !important;
 }
 
 .navbar .menu a:not(:last-child) {
@@ -40,6 +40,7 @@ body {
     transition-duration: 0.4s;
     letter-spacing: 0.5px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none !important;
 }
   
 .navbar .menu a:not(:last-child):hover {
@@ -61,7 +62,6 @@ body {
 .navbar .menu .btn-contact:hover {
     background: #fff;
     color: #2e2c2c;
-    text-decoration: none !important;
 }
 
 .hero-box .hero-heading { 
@@ -145,7 +145,7 @@ p {
 }
 
 .button {
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
     background-color: #333;
     padding: 10px 20px;
@@ -288,6 +288,10 @@ p {
         font-size: 20px;
         margin-left: 15px;
         padding: 10px;
+    }
+
+    .menu {
+        text-decoration: none !important;
     }
 
     .hero-heading {
