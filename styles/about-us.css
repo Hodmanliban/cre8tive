@@ -171,6 +171,10 @@ nav {
     color: #e8e8e8; 
 }
 
+.footer p {
+    margin-left: 0;
+}
+
 
 @media only screen and (max-width: 494px) {
 
