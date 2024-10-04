@@ -11,6 +11,21 @@ body {
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
+#hero {
+    width: 100%;
+    height: 600px;
+    background: url("../images/reneehero.webp") center/cover no-repeat;
+    padding-top: 32px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.navbar {
+=======
 #hero{
     width: 100%;    
     height: 850px;
@@ -28,6 +43,7 @@ body {
 }
   
 .navbar{
+>>>>>>> origin
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
@@ -35,12 +51,36 @@ body {
     margin-left: 650px;
 }
 
+<<<<<<< HEAD
+.navbar .menu a:not(:last-child) {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    transition-duration: 0.4s;
+}
+
+.navbar .menu a:not(:last-child):hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.navbar .menu .btn-contact {
+    color: #fff;
+    margin-left: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+=======
 .navbar .menu a:not(:last-child){
     color: #ffffff;
     margin-left: 20px;
     font-size: 20px;
     transition-duration: 0.4s;
     letter-spacing: 0.5px;
+>>>>>>> origin
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
   
@@ -98,40 +138,70 @@ body {
 }
 
 
-h1 {
-    text-align: center;
-    padding-top: 50px;
-    font-size: 42px;
-    margin-bottom: 30px;
-    color: white;
+.navbar .menu .btn-contact:hover {
+    background: #fff;
+    color: #2e2c2c;
+}
+
+.hero-heading, .hero-desc {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     font-family: sans-serif;
 }
 
-.hero-button {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
+.hero-heading {
+    font-size: 50px;
+    line-height: 65px;
+    margin-left: 90px;
+}
+
+.hero-desc {
+    font-size: 20px;
+    line-height: 27px;
+    padding: 30px 0;
+    margin-left: 90px;
+}
+
+.btn-box {
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.cta-btn {
+    background: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #2e2c2c;
+    font-size: 18px;
+    margin-right: 90px;
     font-family: sans-serif;
+}
+
+.cta-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 100px;
 }
 
 .services {
     display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     justify-content: space-around;
 }
 
 .card {
-    width: 30%;
+    width: 40%;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-top: 90px;
 }
 
 .icon {
-    font-size: 50px;
+    font-size: 30px;
     color: grey;
     margin-bottom: 20px;
 }
@@ -164,19 +234,28 @@ p {
     background-color: #333;
     padding: 10px 20px;
     border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: sans-serif;
+}
+
+.button:hover {
+    background-color: white;
+    color: #333;
+    cursor: pointer;
 }
 
 .faq-section {
-    max-width: 100%;
+    max-width: 70%;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .faq-section h2 {
+    margin-top: 50px;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 15px;
     color: #333;
     font-family: sans-serif;
 }
@@ -207,49 +286,38 @@ p {
 .faq-item p {
     font-size: 16px;
     padding: 10px;
-    color:  #dbdbdb;
-    margin-top: 10px;
-    font-family: sans-serif;
-}
-
-.partners-section {
-    padding: 20px;
-    background-color: #ededed none; /* Bakgrundsfärg för sektionen */
-    border-radius: 15px;
-}
-
-.partners {
     color: #333;
-}
-
-.partners-title {
-    position: absolute; /* Gör att titeln kan placeras över bilderna */
-    top: 20px; /* Avstånd från toppen av sektionen */
-    left: 20px; /* Avstånd från vänster kant */
-    font-size: 32px; /* Storlek på titeln */
-    color: #333; /* Textfärg */
-    z-index: 1; /* Se till att titeln visas över bilderna */
-    justify-content: center;
+    margin-top: 50px;
     font-family: sans-serif;
 }
-
 
 .partners-container {
     display: flex;
-    flex-wrap: wrap; /* Gör så att bilderna går till nästa rad om det behövs */
-    justify-content: center; /* Centrera bilderna horisontellt */
-    gap: 20px; /* Avstånd mellan bilderna */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.partner {
-    flex: 1 1 150px; /* Flexbox för att skapa en responsiv layout */
-    max-width: 150px; /* Maximal bredd för logotypen */
+.partners-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.partners-section h3 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 .partner img {
-    width: 100%; /* Gör bilden responsiv */
-    height: 100px; /* Bevara proportionerna */
-    border-radius: 900px; /* Rundade hörn på bilderna */
+    width: 100%;
+    height: 50px;
+    border-radius: 500px;
 }
 
 .footer {
@@ -286,49 +354,262 @@ p {
 
 /* Footer-styling */
 .footer {
-    padding: 20px; /* Lägg till padding */
-    background-color: #ffffff; /* Bakgrundsfärg på footern */
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Footer-container för flexbox */
 .footer-container {
-    display: flex; /* Gör footern till en flexcontainer */
-    justify-content: space-between; /* Sprid ut innehållet */
-    align-items: center; /* Centrera innehållet vertikalt */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Styling för länkar och text */
 .footer-links {
-    margin: 0; /* Ta bort marginaler */
+    margin: 0;
 }
 
 .footer-links a {
-    margin: 0 10px; /* Avstånd mellan länkar */
-    color: #000; /* Färg på länkar */
-    text-decoration: none; /* Ta bort understrykning */
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: #007BFF; /* Ändra färg vid hovring */
+    color: #007BFF;
 }
 
 footer p {
-    padding: 0; /* Ta bort padding */
-    color: #000000; /* Färg på texten */
+    padding: 0;
+    color: #000;
+    font-family: sans-serif;
 }
 
-/* Styling för social media */
 .social-media {
-    display: flex; /* Gör social media till en flexcontainer */
+    display: flex;
 }
 
 .social-media a {
-    margin: 0 10px; /* Avstånd mellan ikoner */
-    color: #000; /* Färg på ikoner */
-    font-size: 24px; /* Storlek på ikoner */
+    margin: 0 10px;
+    color: #000;
+    font-size: 24px;
 }
 
 .social-media a:hover {
-    color: #007BFF; /* Ändra färg vid hovring */
+    color: #007BFF;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .navbar {
+        margin-left: 600px;
+        padding: 20px;
+    }
+
+    .navbar .menu a {
+        font-size: 22px;
+        margin-left: 50px;
+    }
+
+    .hero-heading {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .hero-desc {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .btn-box {
+        margin-top: 50px;
+    }
+
+    .cta-btn {
+        padding: 20px 50px;
+        font-size: 20px;
+    }
+
+    .services {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .services .card {
+        width: 30%;
+    }
+
+    .partners-container {
+        justify-content: center;
+        gap: 150px;
+    }
+
+    .partner {
+        margin: 0;
+    }
+
+    .faq-section h2 {
+        font-size: 25px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-links a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+    .navbar {
+        margin-left: 0;
+        padding: 30px 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu a {
+        font-size: 20px;
+        margin-left: 15px;
+        padding: 10px;
+    }
+
+    .hero-heading {
+        font-size: 50px;
+        line-height: 65px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-desc {
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn-box {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .cta-btn {
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+
+    .services {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .services .card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .partners-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .partner img {
+        height: auto;
+        max-height: 50px;
+    }
+
+    .faq-section {
+        max-width: 70%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu a {
+        font-size: 18px;
+        margin-left: 15px;
+        padding: 60px;
+    }
+
+    .hero-heading {
+        font-size: 40px;
+        line-height: 55px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 0;
+        text-align: center;
+        margin-left: 90px;
+    }
+
+    .btn-box {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .cta-btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .card {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .partners-container {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .partner img {
+        height: auto;
+        max-height: 40px;
+    }
+
+    .faq-section {
+        max-width: 75%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
 }
