@@ -3,7 +3,7 @@
         position: fixed; 
         top: 20px; 
         left: 20px; 
-        z-index: 1000;
+        z-index: 1000; 
     }
     
  .logo {
@@ -71,6 +71,10 @@ footer p {
 .text-box p {
     margin: 5px 0;
 }
+
+    body{
+        font-family: sans-serif;
+    }
 
 @media (max-width: 768px) {
 .social-media a, .footer-links a {
