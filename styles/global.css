@@ -16,8 +16,6 @@
     body{
         font-family: sans-serif;
     }
-<<<<<<< HEAD
-
 
 .footer {
     background-color: #ffffff; 
@@ -74,12 +72,6 @@ footer p {
     margin: 5px 0;
 }
 
-
-
-=======
-
-  
->>>>>>> landing-page
 @media (max-width: 768px) {
 .social-media a, .footer-links a {
     font-size: 20px;
