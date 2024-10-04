@@ -95,6 +95,7 @@ body {
     border-radius: 50px;
     color: #2e2c2c;
     font-size: 18px;
+    text-decoration: none !important;
 }
 
 .hero-box .cta-btn:hover {
